@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <mirrors>
+      <mirror>
+          <id>nexus</id>
+          <name>Nexus</name>
+          <url>https://artefactrepository.nexus.local/repository/public</url>
+          <mirrorOf>*</mirrorOf>
+      </mirror>
+    </mirrors>
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>https://sonarqube.local</sonar.host.url>
+                <sonar.log.level>DEBUG</sonar.log.level>
+                <sonar.verbose>true</sonar.verbose>
+                <sonar.coverage.exclusions>**/*.java</sonar.coverage.exclusions>
+                <sonar.exclusions>**/*.java</sonar.exclusions>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
+

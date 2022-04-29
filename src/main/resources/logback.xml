@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+
+    <property name="app.name" value="Example" />
+    <property name="app.layer" value="Example" />
+
+    <include resource="logback-master.xml"/>
+
+</configuration>% 

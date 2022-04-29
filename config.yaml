@@ -1,0 +1,16 @@
+# example config for ConcourseCI
+
+---
+tag: 0.0.1
+component: java-example
+clone_url: ssh://git@github.com/example/example.git
+regpath: example/1/2/3
+region: eu-west-1
+space_key: "TST" 
+anchor_id: "123456789"
+
+build:
+  type: java
+  regpath: example/1/2/3
+  name: java-example
+  project_path: java-example/java
